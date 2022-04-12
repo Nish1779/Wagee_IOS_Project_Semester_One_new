@@ -7,15 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		920440392805C663000ECE3C /* Payment_CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 920440382805C663000ECE3C /* Payment_CollectionViewController.swift */; };
+		9204403B2805C68E000ECE3C /* Edit_Position_CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9204403A2805C68E000ECE3C /* Edit_Position_CollectionViewController.swift */; };
+		9204403D2805C6BB000ECE3C /* Employee_Time_Table_CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9204403C2805C6BB000ECE3C /* Employee_Time_Table_CollectionViewController.swift */; };
 		92D90FD32804B81100A3A5FC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D90FD22804B81100A3A5FC /* AppDelegate.swift */; };
 		92D90FD52804B81100A3A5FC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D90FD42804B81100A3A5FC /* SceneDelegate.swift */; };
 		92D90FD72804B81100A3A5FC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D90FD62804B81100A3A5FC /* ViewController.swift */; };
 		92D90FDA2804B81100A3A5FC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92D90FD82804B81100A3A5FC /* Main.storyboard */; };
 		92D90FDC2804B81200A3A5FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92D90FDB2804B81200A3A5FC /* Assets.xcassets */; };
 		92D90FDF2804B81200A3A5FC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92D90FDD2804B81200A3A5FC /* LaunchScreen.storyboard */; };
+		92D90FE928050DD000A3A5FC /* Employee_List_TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D90FE828050DD000A3A5FC /* Employee_List_TableViewController.swift */; };
+		92D90FEB2805280300A3A5FC /* Employee_List_TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D90FEA2805280300A3A5FC /* Employee_List_TableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		920440382805C663000ECE3C /* Payment_CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Payment_CollectionViewController.swift; sourceTree = "<group>"; };
+		9204403A2805C68E000ECE3C /* Edit_Position_CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Edit_Position_CollectionViewController.swift; sourceTree = "<group>"; };
+		9204403C2805C6BB000ECE3C /* Employee_Time_Table_CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Employee_Time_Table_CollectionViewController.swift; sourceTree = "<group>"; };
 		92D90FCF2804B81100A3A5FC /* Wagee_IOS_Project_Semester_One.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wagee_IOS_Project_Semester_One.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		92D90FD22804B81100A3A5FC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		92D90FD42804B81100A3A5FC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +32,8 @@
 		92D90FDB2804B81200A3A5FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		92D90FDE2804B81200A3A5FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		92D90FE02804B81200A3A5FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		92D90FE828050DD000A3A5FC /* Employee_List_TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Employee_List_TableViewController.swift; sourceTree = "<group>"; };
+		92D90FEA2805280300A3A5FC /* Employee_List_TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Employee_List_TableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +73,11 @@
 				92D90FDB2804B81200A3A5FC /* Assets.xcassets */,
 				92D90FDD2804B81200A3A5FC /* LaunchScreen.storyboard */,
 				92D90FE02804B81200A3A5FC /* Info.plist */,
+				92D90FE828050DD000A3A5FC /* Employee_List_TableViewController.swift */,
+				92D90FEA2805280300A3A5FC /* Employee_List_TableViewCell.swift */,
+				920440382805C663000ECE3C /* Payment_CollectionViewController.swift */,
+				9204403A2805C68E000ECE3C /* Edit_Position_CollectionViewController.swift */,
+				9204403C2805C6BB000ECE3C /* Employee_Time_Table_CollectionViewController.swift */,
 			);
 			path = Wagee_IOS_Project_Semester_One;
 			sourceTree = "<group>";
@@ -138,9 +153,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92D90FEB2805280300A3A5FC /* Employee_List_TableViewCell.swift in Sources */,
 				92D90FD72804B81100A3A5FC /* ViewController.swift in Sources */,
+				9204403B2805C68E000ECE3C /* Edit_Position_CollectionViewController.swift in Sources */,
 				92D90FD32804B81100A3A5FC /* AppDelegate.swift in Sources */,
+				9204403D2805C6BB000ECE3C /* Employee_Time_Table_CollectionViewController.swift in Sources */,
+				920440392805C663000ECE3C /* Payment_CollectionViewController.swift in Sources */,
 				92D90FD52804B81100A3A5FC /* SceneDelegate.swift in Sources */,
+				92D90FE928050DD000A3A5FC /* Employee_List_TableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,8 +307,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 95KQM6R65L;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Wagee_IOS_Project_Semester_One/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -303,6 +325,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "Nish-Varia.Wagee-IOS-Project-Semester-One";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -314,8 +337,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 95KQM6R65L;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Wagee_IOS_Project_Semester_One/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -330,6 +355,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "Nish-Varia.Wagee-IOS-Project-Semester-One";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
