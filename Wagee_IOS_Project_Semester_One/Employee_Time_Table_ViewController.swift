@@ -9,6 +9,12 @@ import UIKit
 
 class Employee_Time_Table_ViewController: UIViewController {
 
+    
+    @IBOutlet weak var amount: UILabel!
+    
+    let userDefault = UserDefaults(suiteName: "Wagee")
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -25,5 +31,33 @@ class Employee_Time_Table_ViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        // do stuff
+        let value = userDefault!.value(forKey: "Amount") as? String
+        amount.text = value
+//        let employee = userDefault!.value(forKey: "Employee") as? String
+//        if employee == "A"{
+//            userDefault!.setValue(amount.text, forKey: "Amount")
+//            amount.resignFirstResponder()
+//        }else if employee == "B"{
+//            userDefault!.setValue(amount.text, forKey: "Amount1")
+//            amount.resignFirstResponder()
+//        }else if employee == "C"{
+//            userDefault!.setValue(amount.text, forKey: "Amount2")
+//            amount.resignFirstResponder()
+//        }else if employee == "D"{
+//            userDefault!.setValue(amount.text, forKey: "Amount3")
+//            amount.resignFirstResponder()
+//        }else if employee == "E"{
+//            userDefault!.setValue(amount.text, forKey: "Amount4")
+//            amount.resignFirstResponder()
+//        }else if employee == "F"{
+//            userDefault!.setValue(amount.text, forKey: "Amount5")
+//            amount.resignFirstResponder()
+//        }
+//
+        return true
+    }
 
 }

@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		920440392805C663000ECE3C /* Payment_CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 920440382805C663000ECE3C /* Payment_CollectionViewController.swift */; };
 		9204403B2805C68E000ECE3C /* Edit_Position_CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9204403A2805C68E000ECE3C /* Edit_Position_CollectionViewController.swift */; };
-		9204403D2805C6BB000ECE3C /* Employee_Time_Table_CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9204403C2805C6BB000ECE3C /* Employee_Time_Table_CollectionViewController.swift */; };
 		9204403F2805EBCB000ECE3C /* EmployeeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9204403E2805EBCB000ECE3C /* EmployeeButton.swift */; };
 		920440432805F2B7000ECE3C /* Payment_TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 920440422805F2B7000ECE3C /* Payment_TableView.swift */; };
 		92AAA8E228071CB800422FC2 /* Employee_Time_Table_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92AAA8E128071CB800422FC2 /* Employee_Time_Table_ViewController.swift */; };
@@ -26,7 +25,6 @@
 /* Begin PBXFileReference section */
 		920440382805C663000ECE3C /* Payment_CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Payment_CollectionViewController.swift; sourceTree = "<group>"; };
 		9204403A2805C68E000ECE3C /* Edit_Position_CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Edit_Position_CollectionViewController.swift; sourceTree = "<group>"; };
-		9204403C2805C6BB000ECE3C /* Employee_Time_Table_CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Employee_Time_Table_CollectionViewController.swift; sourceTree = "<group>"; };
 		9204403E2805EBCB000ECE3C /* EmployeeButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeButton.swift; sourceTree = "<group>"; };
 		920440422805F2B7000ECE3C /* Payment_TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Payment_TableView.swift; sourceTree = "<group>"; };
 		92AAA8E128071CB800422FC2 /* Employee_Time_Table_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Employee_Time_Table_ViewController.swift; sourceTree = "<group>"; };
@@ -83,7 +81,6 @@
 				92D90FEA2805280300A3A5FC /* Employee_List_TableViewCell.swift */,
 				920440382805C663000ECE3C /* Payment_CollectionViewController.swift */,
 				9204403A2805C68E000ECE3C /* Edit_Position_CollectionViewController.swift */,
-				9204403C2805C6BB000ECE3C /* Employee_Time_Table_CollectionViewController.swift */,
 				9204403E2805EBCB000ECE3C /* EmployeeButton.swift */,
 				920440422805F2B7000ECE3C /* Payment_TableView.swift */,
 				92AAA8E128071CB800422FC2 /* Employee_Time_Table_ViewController.swift */,
@@ -167,7 +164,6 @@
 				9204403F2805EBCB000ECE3C /* EmployeeButton.swift in Sources */,
 				9204403B2805C68E000ECE3C /* Edit_Position_CollectionViewController.swift in Sources */,
 				92D90FD32804B81100A3A5FC /* AppDelegate.swift in Sources */,
-				9204403D2805C6BB000ECE3C /* Employee_Time_Table_CollectionViewController.swift in Sources */,
 				92AAA8E228071CB800422FC2 /* Employee_Time_Table_ViewController.swift in Sources */,
 				920440432805F2B7000ECE3C /* Payment_TableView.swift in Sources */,
 				920440392805C663000ECE3C /* Payment_CollectionViewController.swift in Sources */,
