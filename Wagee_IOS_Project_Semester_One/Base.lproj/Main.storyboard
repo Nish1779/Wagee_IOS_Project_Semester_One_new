@@ -86,6 +86,7 @@
                                                 </buttonConfiguration>
                                                 <connections>
                                                     <action selector="employeeButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TfX-sg-A0O"/>
+                                                    <segue destination="fjk-Dv-R6q" kind="show" identifier="emp" id="tlb-2P-W3r"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -100,6 +101,7 @@
                             <constraint firstItem="g7u-sA-Mrh" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="xri-5I-7SM"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="aUs-UJ-Apa"/>
                     <connections>
                         <outlet property="passwordField" destination="7Hi-bC-xgy" id="V8G-HH-lDJ"/>
                         <outlet property="userNameField" destination="7Nx-LZ-iOU" id="pYJ-GI-UQs"/>
@@ -163,17 +165,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="G8U-Fm-ty5">
-                                <rect key="frame" x="0.0" y="35" width="414" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <items>
-                                    <navigationItem title="WAGEE" id="jBu-JN-er7">
-                                        <barButtonItem key="backBarButtonItem" title="Home" id="SDi-MB-JRD"/>
-                                        <barButtonItem key="leftBarButtonItem" title="Home" id="il3-Tg-C01"/>
-                                        <barButtonItem key="rightBarButtonItem" title="Edit Position" id="2Ti-Nw-5nx"/>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="11h-7n-iRD">
                                 <rect key="frame" x="20" y="63.5" width="374" height="715"/>
                                 <subviews>
@@ -616,16 +607,32 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="G8U-Fm-ty5">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="WAGEE" id="jBu-JN-er7">
+                                        <barButtonItem key="backBarButtonItem" title="Home" id="SDi-MB-JRD"/>
+                                        <barButtonItem key="leftBarButtonItem" title="&lt; Home" id="il3-Tg-C01">
+                                            <connections>
+                                                <segue destination="jJ8-b3-7a9" kind="show" id="A2T-q5-ftL"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" title="Edit Position" id="2Ti-Nw-5nx"/>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="5nl-Ih-Z0X"/>
                         <color key="backgroundColor" systemColor="systemTealColor"/>
                         <constraints>
-                            <constraint firstItem="11h-7n-iRD" firstAttribute="centerX" secondItem="aB6-jK-NkG" secondAttribute="centerX" id="Bnw-7y-KSf"/>
-                            <constraint firstItem="11h-7n-iRD" firstAttribute="centerY" secondItem="aB6-jK-NkG" secondAttribute="centerY" id="l4z-5m-dm7"/>
+                            <constraint firstItem="11h-7n-iRD" firstAttribute="centerY" secondItem="aB6-jK-NkG" secondAttribute="centerY" id="QQC-Bz-Oxt"/>
+                            <constraint firstItem="11h-7n-iRD" firstAttribute="centerX" secondItem="aB6-jK-NkG" secondAttribute="centerX" id="t9l-k0-Vji"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="u1D-AI-L8d"/>
                     <connections>
+                        <outlet property="amount" destination="X9y-26-X2w" id="9ZG-ur-E1I"/>
                         <outlet property="pEmployeeName" destination="JMg-Nz-uW2" id="e41-Qq-6IE"/>
                     </connections>
                 </viewController>
@@ -633,16 +640,16 @@
             </objects>
             <point key="canvasLocation" x="1435" y="68"/>
         </scene>
-        <!--Employee List Table View Controller-->
+        <!--Employee Time Table View Controller-->
         <scene sceneID="dYC-NU-PIM">
             <objects>
-                <viewController id="fjk-Dv-R6q" customClass="Employee_List_TableViewController" customModule="Wagee_IOS_Project_Semester_One" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="fjk-Dv-R6q" customClass="Employee_Time_Table_ViewController" customModule="Wagee_IOS_Project_Semester_One" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="lXD-Wg-g1X">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="StB-Au-YCd">
-                                <rect key="frame" x="0.0" y="34" width="414" height="44"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
                                     <navigationItem title="WAGEE" id="Oa1-yB-JaN">
@@ -650,8 +657,8 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="21" translatesAutoresizingMaskIntoConstraints="NO" id="zpO-tz-cWo">
-                                <rect key="frame" x="20" y="83" width="374" height="730"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" spacing="21" translatesAutoresizingMaskIntoConstraints="NO" id="zpO-tz-cWo">
+                                <rect key="frame" x="20" y="78" width="374" height="730"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="yEu-4Z-wBY">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="536"/>
@@ -1069,15 +1076,20 @@
                                         </subviews>
                                     </stackView>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="374" id="A0Z-wE-eoC"/>
+                                    <constraint firstAttribute="height" constant="730" id="joL-Ak-doN"/>
+                                </constraints>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="nGy-41-fab"/>
                         <color key="backgroundColor" systemColor="systemTealColor"/>
                         <constraints>
-                            <constraint firstItem="zpO-tz-cWo" firstAttribute="centerY" secondItem="lXD-Wg-g1X" secondAttribute="centerY" id="8Gv-4z-I5X"/>
-                            <constraint firstItem="zpO-tz-cWo" firstAttribute="centerX" secondItem="lXD-Wg-g1X" secondAttribute="centerX" id="d4k-B3-1Q9"/>
+                            <constraint firstItem="zpO-tz-cWo" firstAttribute="centerX" secondItem="lXD-Wg-g1X" secondAttribute="centerX" id="BOG-2t-i48"/>
+                            <constraint firstItem="zpO-tz-cWo" firstAttribute="centerY" secondItem="lXD-Wg-g1X" secondAttribute="centerY" id="GxP-03-8Ig"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="soi-ZQ-kmz"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tNl-P9-tQL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1091,15 +1103,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="F1r-Oa-UbA">
-                                <rect key="frame" x="0.0" y="33" width="414" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <items>
-                                    <navigationItem title="Edit Position" id="WLU-DM-W9x">
-                                        <barButtonItem key="leftBarButtonItem" title="Home" id="zO0-cX-vgc"/>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
                             <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" alignment="top" spacing="53" translatesAutoresizingMaskIntoConstraints="NO" id="jBH-PE-nWO">
                                 <rect key="frame" x="44" y="105" width="256" height="580"/>
                                 <subviews>
@@ -1257,16 +1260,29 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="F1r-Oa-UbA">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Edit Position" id="WLU-DM-W9x">
+                                        <barButtonItem key="leftBarButtonItem" title="&lt; Home" id="zO0-cX-vgc"/>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="YFC-Q5-aDY"/>
                         <color key="backgroundColor" systemColor="systemTealColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="PJa-gL-Amv"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gDe-Gq-UQ9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2167" y="68"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="A2T-q5-ftL"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="Image" width="249.5" height="250"/>
         <namedColor name="AccentColor">

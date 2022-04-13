@@ -23,6 +23,19 @@ class Employee_Time_Table_CollectionViewController: UICollectionViewController {
         // Do any additional setup after loading the view.
     }
 
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if(segue.identifier == "emp"){
+//            let indexPath = self.tableView.indexPathForSelectedRow!
+//            
+//            let payment_TableView = segue.destination as? Payment_TableView
+//            
+//            let selectedName = name[indexPath.row]
+//            
+//            payment_TableView!.name = selectedName
+//            
+//            self.tableView.deselectRow(at: indexPath, animated: true)
+        }
+    }
     /*
     // MARK: - Navigation
 

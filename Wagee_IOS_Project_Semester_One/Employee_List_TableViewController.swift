@@ -33,6 +33,15 @@ class Employee_List_TableViewController: UITableViewController {
         
         let C = EmployeeButton(id:"C")
         name.append(C)
+        
+        let D = EmployeeButton(id:"D")
+        name.append(D)
+        
+        let E = EmployeeButton(id:"E")
+        name.append(E)
+        
+        let F = EmployeeButton(id:"F")
+        name.append(F)
     }
     
     // MARK: - Table view data source
@@ -44,7 +53,7 @@ class Employee_List_TableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 3
+        return 6
     }
 
      
@@ -55,6 +64,7 @@ class Employee_List_TableViewController: UITableViewController {
         // cell.employeeName.setTitle(thisName.id, for: .normal)
         cell.employeeName.text = thisName.id
 
+        
     
 //        cell.employeeName.setTitle(name[indexPath.row], for: .normal)
 
