@@ -9,8 +9,13 @@ import UIKit
 
 class Employee_List_TableViewController: UITableViewController {
 
+    @IBOutlet var shapeTableView: UITableView!
+    
+    var name = [EmployeeButton]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        initList()
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -19,6 +24,17 @@ class Employee_List_TableViewController: UITableViewController {
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
 
+    func initList(){
+        let A = EmployeeButton(id:"A")
+        name.append(A)
+        
+        let B = EmployeeButton(id:"B")
+        name.append(B)
+        
+        let C = EmployeeButton(id:"C")
+        name.append(C)
+    }
+    
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -28,18 +44,41 @@ class Employee_List_TableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 5
+        return 3
     }
 
      
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Employee_List_TableCell", for: indexPath) as! Employee_List_TableViewCell
 
-        // Configure the cell...
-        
-        cell.employeeName.text = "Nish"
+        let thisName = name[indexPath.row]
+        // cell.employeeName.setTitle(thisName.id, for: .normal)
+        cell.employeeName.text = thisName.id
+
+    
+//        cell.employeeName.setTitle(name[indexPath.row], for: .normal)
 
         return cell
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        self.performSegue(withIdentifier: "paymentSegue", sender: self)
+        
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if(segue.identifier == "paymentSegue"){
+            let indexPath = self.tableView.indexPathForSelectedRow!
+            
+            let payment_TableView = segue.destination as? Payment_TableView
+            
+            let selectedName = name[indexPath.row]
+            
+            payment_TableView!.name = selectedName
+            
+            self.tableView.deselectRow(at: indexPath, animated: true)
+        }
     }
     
 

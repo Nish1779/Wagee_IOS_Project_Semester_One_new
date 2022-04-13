@@ -68,7 +68,7 @@
                                                 </buttonConfiguration>
                                                 <connections>
                                                     <action selector="employerButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="12x-nf-IU2"/>
-                                                    <segue destination="jJ8-b3-7a9" kind="presentation" id="IXo-9X-FUK"/>
+                                                    <segue destination="jJ8-b3-7a9" kind="presentation" identifier="employerLogin" id="lSB-yT-A7f"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SHa-nn-PWp">
@@ -112,9 +112,10 @@
         <!--Employee List-->
         <scene sceneID="Hoh-SN-qV1">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TfP-Tk-Sq1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <tableViewController id="jJ8-b3-7a9" customClass="Employee_List_TableViewController" customModule="Wagee_IOS_Project_Semester_One" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="xBI-dg-5IU">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
@@ -125,18 +126,17 @@
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bz5-ML-7aH">
-                                            <rect key="frame" x="10" y="-1" width="394" height="44"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BOe-gU-GcN">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <gestureRecognizers/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <outlet property="employeeName" destination="Bz5-ML-7aH" id="FAM-Zp-suP"/>
+                                    <outlet property="employeeName" destination="BOe-gU-GcN" id="bNL-RL-7td"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -146,17 +146,21 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Employee List" id="taM-EW-6HJ"/>
+                    <connections>
+                        <outlet property="shapeTableView" destination="xBI-dg-5IU" id="RA7-Bp-lnU"/>
+                        <outlet property="tableView" destination="xBI-dg-5IU" id="7wi-Bw-60a"/>
+                        <segue destination="ajV-5r-1yN" kind="show" identifier="paymentSegue" id="kCo-GP-hMU"/>
+                    </connections>
                 </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="TfP-Tk-Sq1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1461" y="68"/>
+            <point key="canvasLocation" x="737.68115942028987" y="67.633928571428569"/>
         </scene>
-        <!--Payment Collection View Controller-->
+        <!--Payment Table View-->
         <scene sceneID="HBg-8i-S6g">
             <objects>
-                <viewController id="ajV-5r-1yN" customClass="Payment_CollectionViewController" customModule="Wagee_IOS_Project_Semester_One" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="ajV-5r-1yN" customClass="Payment_TableView" customModule="Wagee_IOS_Project_Semester_One" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="aB6-jK-NkG">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="G8U-Fm-ty5">
@@ -171,7 +175,7 @@
                                 </items>
                             </navigationBar>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="11h-7n-iRD">
-                                <rect key="frame" x="20" y="90.5" width="374" height="715"/>
+                                <rect key="frame" x="20" y="63.5" width="374" height="715"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="5td-bt-wCk">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="536"/>
@@ -620,10 +624,14 @@
                             <constraint firstItem="11h-7n-iRD" firstAttribute="centerY" secondItem="aB6-jK-NkG" secondAttribute="centerY" id="l4z-5m-dm7"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="u1D-AI-L8d"/>
+                    <connections>
+                        <outlet property="pEmployeeName" destination="JMg-Nz-uW2" id="e41-Qq-6IE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="A24-wO-aod" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2159" y="68"/>
+            <point key="canvasLocation" x="1435" y="68"/>
         </scene>
         <!--Employee List Table View Controller-->
         <scene sceneID="dYC-NU-PIM">
@@ -1073,7 +1081,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tNl-P9-tQL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="19" y="749"/>
+            <point key="canvasLocation" x="19" y="757"/>
         </scene>
         <!--Edit Position Collection View Controller-->
         <scene sceneID="Ek5-HY-jgO">
@@ -1256,31 +1264,9 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gDe-Gq-UQ9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2890" y="68"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="xan-BA-PBT">
-            <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="3nC-EF-IG9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="6QH-WQ-xPZ" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationItem key="navigationItem" id="V1d-ZF-cV5"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="3mX-N9-Nqt">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="jJ8-b3-7a9" kind="relationship" relationship="rootViewController" id="4kX-FF-tp4"/>
-                    </connections>
-                </navigationController>
-            </objects>
-            <point key="canvasLocation" x="742" y="68"/>
+            <point key="canvasLocation" x="2167" y="68"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="4kX-FF-tp4"/>
-    </inferredMetricsTieBreakers>
     <resources>
         <image name="Image" width="249.5" height="250"/>
         <namedColor name="AccentColor">

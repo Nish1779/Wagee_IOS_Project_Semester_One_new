@@ -10,6 +10,8 @@
 		920440392805C663000ECE3C /* Payment_CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 920440382805C663000ECE3C /* Payment_CollectionViewController.swift */; };
 		9204403B2805C68E000ECE3C /* Edit_Position_CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9204403A2805C68E000ECE3C /* Edit_Position_CollectionViewController.swift */; };
 		9204403D2805C6BB000ECE3C /* Employee_Time_Table_CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9204403C2805C6BB000ECE3C /* Employee_Time_Table_CollectionViewController.swift */; };
+		9204403F2805EBCB000ECE3C /* EmployeeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9204403E2805EBCB000ECE3C /* EmployeeButton.swift */; };
+		920440432805F2B7000ECE3C /* Payment_TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 920440422805F2B7000ECE3C /* Payment_TableView.swift */; };
 		92D90FD32804B81100A3A5FC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D90FD22804B81100A3A5FC /* AppDelegate.swift */; };
 		92D90FD52804B81100A3A5FC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D90FD42804B81100A3A5FC /* SceneDelegate.swift */; };
 		92D90FD72804B81100A3A5FC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D90FD62804B81100A3A5FC /* ViewController.swift */; };
@@ -24,6 +26,8 @@
 		920440382805C663000ECE3C /* Payment_CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Payment_CollectionViewController.swift; sourceTree = "<group>"; };
 		9204403A2805C68E000ECE3C /* Edit_Position_CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Edit_Position_CollectionViewController.swift; sourceTree = "<group>"; };
 		9204403C2805C6BB000ECE3C /* Employee_Time_Table_CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Employee_Time_Table_CollectionViewController.swift; sourceTree = "<group>"; };
+		9204403E2805EBCB000ECE3C /* EmployeeButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeButton.swift; sourceTree = "<group>"; };
+		920440422805F2B7000ECE3C /* Payment_TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Payment_TableView.swift; sourceTree = "<group>"; };
 		92D90FCF2804B81100A3A5FC /* Wagee_IOS_Project_Semester_One.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wagee_IOS_Project_Semester_One.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		92D90FD22804B81100A3A5FC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		92D90FD42804B81100A3A5FC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -78,6 +82,8 @@
 				920440382805C663000ECE3C /* Payment_CollectionViewController.swift */,
 				9204403A2805C68E000ECE3C /* Edit_Position_CollectionViewController.swift */,
 				9204403C2805C6BB000ECE3C /* Employee_Time_Table_CollectionViewController.swift */,
+				9204403E2805EBCB000ECE3C /* EmployeeButton.swift */,
+				920440422805F2B7000ECE3C /* Payment_TableView.swift */,
 			);
 			path = Wagee_IOS_Project_Semester_One;
 			sourceTree = "<group>";
@@ -155,9 +161,11 @@
 			files = (
 				92D90FEB2805280300A3A5FC /* Employee_List_TableViewCell.swift in Sources */,
 				92D90FD72804B81100A3A5FC /* ViewController.swift in Sources */,
+				9204403F2805EBCB000ECE3C /* EmployeeButton.swift in Sources */,
 				9204403B2805C68E000ECE3C /* Edit_Position_CollectionViewController.swift in Sources */,
 				92D90FD32804B81100A3A5FC /* AppDelegate.swift in Sources */,
 				9204403D2805C6BB000ECE3C /* Employee_Time_Table_CollectionViewController.swift in Sources */,
+				920440432805F2B7000ECE3C /* Payment_TableView.swift in Sources */,
 				920440392805C663000ECE3C /* Payment_CollectionViewController.swift in Sources */,
 				92D90FD52804B81100A3A5FC /* SceneDelegate.swift in Sources */,
 				92D90FE928050DD000A3A5FC /* Employee_List_TableViewController.swift in Sources */,

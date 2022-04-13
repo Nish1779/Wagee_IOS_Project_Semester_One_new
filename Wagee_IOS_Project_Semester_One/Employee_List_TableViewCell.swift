@@ -9,8 +9,8 @@ import UIKit
 
 class Employee_List_TableViewCell: UITableViewCell {
 
-    
     @IBOutlet weak var employeeName: UILabel!
+    
     
     override func awakeFromNib() {
         super.awakeFromNib()
