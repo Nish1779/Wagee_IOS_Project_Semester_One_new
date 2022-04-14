@@ -14,50 +14,40 @@ class Employee_Time_Table_ViewController: UIViewController {
     
     let userDefault = UserDefaults(suiteName: "Wagee")
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-    
-    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        // do stuff
-        let value = userDefault!.value(forKey: "Amount") as? String
-        amount.text = value
-//        let employee = userDefault!.value(forKey: "Employee") as? String
-//        if employee == "A"{
-//            userDefault!.setValue(amount.text, forKey: "Amount")
-//            amount.resignFirstResponder()
-//        }else if employee == "B"{
-//            userDefault!.setValue(amount.text, forKey: "Amount1")
-//            amount.resignFirstResponder()
-//        }else if employee == "C"{
-//            userDefault!.setValue(amount.text, forKey: "Amount2")
-//            amount.resignFirstResponder()
-//        }else if employee == "D"{
-//            userDefault!.setValue(amount.text, forKey: "Amount3")
-//            amount.resignFirstResponder()
-//        }else if employee == "E"{
-//            userDefault!.setValue(amount.text, forKey: "Amount4")
-//            amount.resignFirstResponder()
-//        }else if employee == "F"{
-//            userDefault!.setValue(amount.text, forKey: "Amount5")
-//            amount.resignFirstResponder()
+        let name = userDefault!.value(forKey: "Employee") as? String
+        
+//        if let value = userDefault!.value(forKey: "Amount") as? String{
+//            amount.text = value
 //        }
-//
-        return true
+    
+        if name == "A"{
+            if let value = userDefault!.value(forKey: "Amount") as? String{
+                amount.text = value
+            }
+        }else if name == "B"{
+            if let value = userDefault!.value(forKey: "Amount1") as? String{
+                amount.text = value
+            }
+        }else if name == "C"{
+            if let value = userDefault!.value(forKey: "Amount2") as? String{
+                amount.text = value
+            }
+        }else if name == "D"{
+            if let value = userDefault!.value(forKey: "Amount3") as? String{
+                amount.text = value
+            }
+        }else if name == "E"{
+            if let value = userDefault!.value(forKey: "Amount4") as? String{
+                amount.text = value
+            }
+        }else if name == "F"{
+            if let value = userDefault!.value(forKey: "Amount5") as? String{
+                amount.text = value
+            }
+        }
+        
     }
 
 }
