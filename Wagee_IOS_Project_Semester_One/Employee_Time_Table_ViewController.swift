@@ -18,9 +18,6 @@ class Employee_Time_Table_ViewController: UIViewController {
         super.viewDidLoad()
         let name = userDefault!.value(forKey: "Employee") as? String
         
-//        if let value = userDefault!.value(forKey: "Amount") as? String{
-//            amount.text = value
-//        }
     
         if name == "A"{
             if let value = userDefault!.value(forKey: "Amount") as? String{

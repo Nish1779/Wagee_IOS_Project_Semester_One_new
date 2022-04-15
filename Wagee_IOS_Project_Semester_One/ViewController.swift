@@ -33,7 +33,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
 //    }
     
     @IBAction func employerButton(_ sender: Any) {
-        if(userNameField.text!.isEqual("e") && passwordField.text!.isEqual("1") ){
+        if(userNameField.text!.isEqual("Employer") && passwordField.text!.isEqual("1") ){
           
         }
     }
@@ -41,17 +41,17 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     
     @IBAction func employeeButton(_ sender: Any) {
-        if(userNameField.text!.isEqual("a") && passwordField.text!.isEqual("1") ){
+        if(userNameField.text!.isEqual("A") && passwordField.text!.isEqual("1") ){
             userDefault!.setValue(userNameField.text!, forKey: "Employee")
-        }else if(userNameField.text!.isEqual("b") && passwordField.text!.isEqual("1") ){
+        }else if(userNameField.text!.isEqual("B") && passwordField.text!.isEqual("1") ){
             userDefault!.setValue(userNameField.text!, forKey: "Employee")
-        }else if(userNameField.text!.isEqual("c") && passwordField.text!.isEqual("1") ){
+        }else if(userNameField.text!.isEqual("C") && passwordField.text!.isEqual("1") ){
             userDefault!.setValue(userNameField.text!, forKey: "Employee")
-        }else if(userNameField.text!.isEqual("d") && passwordField.text!.isEqual("1") ){
+        }else if(userNameField.text!.isEqual("D") && passwordField.text!.isEqual("1") ){
             userDefault!.setValue(userNameField.text!, forKey: "Employee")
-        }else if(userNameField.text!.isEqual("e") && passwordField.text!.isEqual("1") ){
+        }else if(userNameField.text!.isEqual("E") && passwordField.text!.isEqual("1") ){
             userDefault!.setValue(userNameField.text!, forKey: "Employee")
-        }else if(userNameField.text!.isEqual("f") && passwordField.text!.isEqual("1") ){
+        }else if(userNameField.text!.isEqual("F") && passwordField.text!.isEqual("1") ){
             userDefault!.setValue(userNameField.text!, forKey: "Employee")
         }
 //        else{
